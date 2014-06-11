@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系人是否显示头像"/>
+    <ToggleButton
+        android:id="@+id/isimage_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="否"
+        android:textOn="是"
+        android:checked="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     <TextView
+        android:id="@+id/gridcolum_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gridview显示列数"/>
+     <RelativeLayout
+         android:layout_width="95dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/column_setting">
+         <Button
+             android:id="@+id/less_btn"
+             android:layout_width="35dp"
+             android:layout_height="25dp"
+             android:layout_alignParentLeft="true"
+             android:textColorHighlight="#0f0"
+             android:text="-"/>
+         <TextView
+        	 android:id="@+id/column_number"
+       		 android:layout_width="25dp"
+        	 android:layout_height="25dp"
+       		 android:textSize="23sp"
+       		 android:gravity="center"
+       		 android:layout_toRightOf="@id/less_btn"
+       		 android:text="4"/>
+         <Button
+             android:id="@+id/more_btn"
+             android:layout_width="35dp"
+             android:layout_height="25dp"
+             android:layout_toRightOf="@id/column_number"
+             android:textColorHighlight="#0f0"
+             android:text="+"/>
+         </RelativeLayout>
+     </LinearLayout>
+     
+     
+     <TextView
+        android:id="@+id/backcolor_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="背景色设置"/>
+    
+
+</LinearLayout>
